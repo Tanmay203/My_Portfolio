@@ -1,0 +1,124 @@
+.about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a; /* Background color */
+    color: white; /* Text color */
+    padding: 2rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left side (image) */
+.about-image {
+    flex: 1;
+    text-align: left; /* Align image to the left */
+    margin-right: 2rem; /* Maintain some spacing */
+}
+
+.profile-image {
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Increase max width for larger image */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    margin-right: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem; /* Adjust size for better readability */
+    color: #ccc; /* Default color for text */
+}
+
+.about-text .label {
+    font-size: 1.2rem; /* Adjust size */
+    background: linear-gradient(90deg, #ff007f, #00ffff); /* Neon pink to neon cyan */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Make text transparent to show gradient */
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Right side (text) */
+.about-text {
+    flex: 1; /* Ensures it takes up available space */
+    text-align: left;
+}
+
+.about-text h2,
+.about-text h3,
+.about-text h4 {
+    color: white; /* Set heading color */
+}
+
+.about-text p {
+    font-size: 1rem; /* Adjust size for the description */
+    color: #ccc;
+    margin-top: 1rem; /* Adjust margin as needed */
+}
+
+ul {
+    list-style-type: disc; /* Adds bullets to the list */
+    margin-left: 20px; /* Indentation for bullets */
+    color: #ccc; /* Text color for the list */
+}
+
+ul li {
+    color: white; /* Change bullet color to white */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 2rem; /* Spacing above the image */
+        max-width: 200px; /* Smaller size for mobile devices */
+        margin-right: 0; /* Remove margin on small screens */
+    }
+}
+.about-text h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff007f, #00ffff); /* Neon pink to neon cyan */
+    background-clip: text; /* Clipping the background to text */
+    -webkit-background-clip: text; /* Vendor prefix for compatibility */
+    color: transparent; /* Make text transparent to show gradient */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.about-text h4 {
+    font-size: 2.3rem; /* Adjust size as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff2d95, #00bfff); /* Neon fuchsia to neon cyan */
+
+
+    background-clip: text; /* Clipping the background to text */
+    -webkit-background-clip: text; /* Vendor prefix for compatibility */
+    color: transparent; /* Make text transparent to show gradient */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.about-text h5 {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffeb3b, #9c27b0); /* Neon yellow to neon violet */
+
+
+
+    background-clip: text; /* Clipping the background to text */
+    -webkit-background-clip: text; /* Vendor prefix for compatibility */
+    color: transparent; /* Make text transparent to show gradient */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+

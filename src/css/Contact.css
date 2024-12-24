@@ -1,0 +1,105 @@
+/* Contact Section */
+.contact-section {
+  min-height: 100vh; /* Full screen height */
+  padding: 2rem;
+  background-color: #1a1a1a; /* Background color */
+  color: white; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Form container styling */
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title styling */
+h2 {
+  font-size: 2.5rem;
+  color: #00ffff; /* Neon color */
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ff007f, #00ffff); /* Neon gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: bold;
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Button styling */
+button {
+  background-color: #00ff7f;
+  color: black;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00cc66;
+}
+
+/* Success and error messages */
+.success-message {
+  color: green;
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.6rem;
+  }
+
+  button {
+    padding: 0.8rem;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,153 @@
+/* src/css/HomeScreen.css */
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Background color */
+  color: white; /* Text color */
+  padding: 2rem;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Left side (text) */
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h1 {
+  /* Existing styles */
+  font-size: 4rem; /* Adjust size as needed */
+  font-weight: bold;
+  background: linear-gradient(90deg, purple, pink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Make text transparent */
+ 
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* src/css/HomeScreen.css */
+.home-text h2 {
+  font-size: 4rem; /* Adjust size as needed */
+  font-weight: bold;
+  text-align: left;
+  background: linear-gradient(90deg, #00ffff, #8000ff); /* Neon cyan to neon purple */
+  background-clip: text; /* Clipping the background to text */
+  -webkit-background-clip: text; /* Vendor prefix for compatibility */
+  color: transparent; /* Make text transparent to show gradient */
+  transition: opacity 0.5s ease-in-out;
+  line-height: 2; /* Smooth transition */
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 3rem; /* Add margin-top to move it lower */
+}
+
+/* Right side (image) */
+.home-image {
+  flex: 1;
+  text-align: right;
+  margin-right: 2rem; /* Shift image slightly to the right */
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 350px; /* Set a maximum width for responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensures a circular shape */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .home-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .home-text {
+      text-align: center;
+  }
+
+  .profile-image {
+      margin-top: 2rem; /* Spacing above the image */
+      max-width: 200px; /* Smaller size for mobile devices */
+      margin-right: 0; /* Remove margin on small screens */
+  }
+}
+
+/* Subtle Neon Buttons Section */
+.home-buttons {
+  margin-top: 1.5rem;
+}
+
+.home-buttons .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  background-color: #ff007f; /* Base button color */
+  color: white;
+  border-radius: 30px; /* Rounded corners */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(255, 0, 127, 0.3), 0 0 8px rgba(255, 0, 127, 0.2); /* Softer glow */
+}
+
+.home-buttons .btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px; /* Rounded corners */
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #ff007f, #00fffb); /* Neon gradient */
+  filter: blur(4px); /* Softer glow */
+  opacity: 0.4; /* Lower intensity */
+}
+
+.home-buttons .btn:hover {
+  background-color: #00fffb; /* Button color changes on hover */
+  box-shadow: 0 0 10px rgba(0, 255, 251, 0.5), 0 0 15px rgba(0, 255, 251, 0.3); /* Subtle glow on hover */
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.hire-me-btn {
+  background-color: #00cc80; /* Softer green color for "Hire Me" */
+  box-shadow: 0 0 5px rgba(0, 204, 128, 0.4), 0 0 8px rgba(0, 204, 128, 0.2); /* Softer green glow */
+}
+
+.hire-me-btn:hover {
+  background-color: #00b374; /* Subtle change on hover */
+  box-shadow: 0 0 10px rgba(0, 204, 128, 0.5), 0 0 15px rgba(0, 204, 128, 0.3); /* Subtle glow on hover */
+}
+
+.download-btn {
+  background-color: #ff007f; /* Softer pink color for "Download Resume" */
+  box-shadow: 0 0 5px rgba(255, 0, 127, 0.4), 0 0 8px rgba(255, 0, 127, 0.2); /* Softer pink glow */
+}
+
+.download-btn:hover {
+  background-color: #ff66ff; /* Subtle pink on hover */
+  box-shadow: 0 0 10px rgba(255, 102, 255, 0.5), 0 0 15px rgba(255, 102, 255, 0.3); /* Subtle glow on hover */
+}

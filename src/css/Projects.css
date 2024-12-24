@@ -1,0 +1,143 @@
+.projects-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Background color */
+  color: white; /* Text color */
+  padding: 2rem;
+  flex-direction: column;
+  text-align: center; /* Center the content horizontally */
+}
+
+.projects-section h2 {
+  font-size: 2.6rem; /* Larger font size for title */
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff007f, #00ffff); /* Neon pink to cyan */
+  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; /* Vendor prefix for compatibility */
+  color: transparent; /* Make text transparent to show gradient */
+  transition: opacity 0.5s ease-in-out;
+  margin-bottom: 2rem;
+  margin-top: 30px;
+  line-height: normal;
+}
+
+.projects-title {
+  font-size: 2.6rem;
+  background: linear-gradient(90deg, #ff007f, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+
+/* Project Card */
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.project-card .btn-view {
+  background-color: #00ffff;
+  color: black;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project-card .btn-view:hover {
+  background-color: #00b3b3;
+}
+
+/* Neon Gradient Text for Project Titles */
+.project-card .neon-text-1 {
+  background: #ff007f; /* Neon pink to cyan */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 2rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-card {
+    margin-bottom: 2rem; /* Adjust card spacing for smaller screens */
+  }
+}
+
+/* Card Image */
+.card-image {
+  background-size: cover;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* View Project Button (Hidden by default) */
+.project-card .btn-view {
+  background-color: transparent;  /* Make the background transparent */
+  color: white;                   /* Text color (eye icon color) */
+  padding: 1rem;                  /* Adjust padding for a circular shape */
+  border-radius: 50%;             /* Make it circular */
+  border: 2px solid #00ffff;      /* Optional: add a border if you want */
+  position: absolute;             /* Positioning it absolutely */
+  bottom: 15px;                   /* Align it at the bottom */
+  left: 50%;                      /* Center horizontally */
+  transform: translateX(-50%);    /* Ensure it's perfectly centered */
+  cursor: pointer;
+  opacity: 0;                     /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+}
+
+.project-card:hover .btn-view {
+  opacity: 1;  /* Make it visible on hover */
+  transform: translateX(-50%) translateY(-10px); /* Optional: add a small hover effect */
+}
+
+
+/* Button hover effect */
+.view-project-btn:hover {
+  background-color: rgba(0, 255, 255, 1); /* Full cyan on hover */
+}
+.neon-text {
+  background: linear-gradient(90deg, #ff007f, #00ffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 0.5s ease-in-out;
+}
+.text{
+  color: white;
+}

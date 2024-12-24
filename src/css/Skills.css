@@ -1,0 +1,104 @@
+/* Container for the entire section */
+.skills-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a; /* Background color */
+  color: white; /* Text color */
+  padding: 2rem;
+}
+.bg-black-200 {
+    background-color: #1a1a1a; /* White background */
+    padding: 3rem 0;
+    border-radius: 10px; /* Optional: Adds rounded corners to the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow */
+  }
+  
+  /* Heading styling for Skills & Abilities */
+  .text-4xl {
+    font-size: 2.25rem; /* Adjust font size */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Gradient text styling for heading */
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, #ff007f, #00ffff); /* Neon gradient from pink to cyan */
+  }
+  
+  .bg-clip-text {
+    background-clip: text; /* Clips the background to the text */
+    -webkit-background-clip: text; /* Vendor prefix for compatibility */
+    color: transparent; /* Make the text transparent to show the gradient */
+  }
+  
+  /* General flexbox layout for the logos */
+  .flex {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    justify-content: flex-start; /* Align items to the start of the row */
+    gap: 2rem; /* Adds spacing between the logos */
+  }
+  
+  /* Styling for each skill item */
+  .m-6 {
+    margin: 1.5rem; /* Adjusts spacing between items */
+  }
+  
+  /* Stacks logos vertically inside each logo container */
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Centers items horizontally */
+  .items-center {
+    align-items: center;
+  }
+  
+  /* Optional: Adjust text size */
+  .text-lg {
+    font-size: 1rem;
+    text-align: center; /* Ensure text is centered */
+  }
+  
+  /* Styling for each logo container */
+  .bg-gray-800 {
+    background-color: #333; /* Dark background for the logo container */
+  }
+  
+  /* Adds some spacing between logos and logo container */
+  .p-6 {
+    padding: 1.5rem; /* Padding inside each logo container */
+  }
+  
+  .rounded-full {
+    border-radius: 50%; /* Circular container */
+  }
+  
+  /* Adds hover effect to logos */
+  .hover\:scale-110:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Text styling for skill names */
+  .text-white {
+    color: white;
+  }
+  
+  /* Ensures logos are of a consistent size */
+  img {
+    object-fit: contain; /* Ensures the logos are scaled properly */
+    width: 60px; /* Set width to 60px */
+    height: 60px; /* Set height to 60px */
+  }
+  
+  /* Styling for the skill names */
+  .text-lg {
+    font-size: 1rem; /* Font size for skill names */
+    color: white; /* White text color */
+    text-align: center; /* Center the skill names below the logos */
+  }
+  

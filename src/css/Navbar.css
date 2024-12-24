@@ -1,0 +1,61 @@
+/* src/css/Navbar.css */
+
+.navbar {
+  background-color: #323030 !important; /* Dark background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem; /* Increase padding for height */
+  min-height: 10px; /* Ensure a consistent navbar height */
+}
+
+.brand {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 20px;
+  text-transform: uppercase;
+  animation: neonGlow 1.5s ease-in-out infinite alternate; /* Animation */
+  text-shadow: 0 0 5px #fff, 0 0 10px #ff66cc, 0 0 20px #ff66cc; /* Subtle neon glow */
+}
+
+/* Neon glow animation keyframes */
+@keyframes neonGlow {
+  0% {
+      color: #ff66cc; /* Soft neon pink */
+      text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc;
+  }
+  50% {
+      color: #66ccff; /* Soft neon cyan */
+      text-shadow: 0 0 5px #66ccff, 0 0 10px #66ccff;
+  }
+  100% {
+      color: #66ff66; /* Soft neon green */
+      text-shadow: 0 0 5px #66ff66, 0 0 10px #66ff66;
+  }
+}
+
+.nav-link {
+  color: red!important; /* White text */
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff66cc !important; /* Neon pink on hover */
+}
+
+.nav-link:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #66ccff, #ff66cc); /* Neon gradient underline */
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.4s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+}
