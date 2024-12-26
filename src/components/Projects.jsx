@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'My Portfolio',
     description:
-      'My Portfolio web application made with ReactJs. A unique platform that allows you to showcase your work and tell others about yourself',
+      'My Portfolio web application made with ReactJs. A unique platform that allows you to show your work and tell about yourself',
     link: 'https://github.com/Tanmay203/My_Portfolio',
     image: image22,
   },
