@@ -17,7 +17,7 @@ const projects = [
   {
     title: 'My Portfolio',
     description:
-      'E-commerce application with React and Strapi. Buy and sell electronic gadgets! Integrated with Stripe for payment processing.',
+      'My Portfolio web application made with ReactJs. A unique platform that allows you to showcase your work and tell others about yourself',
     link: 'https://github.com/Tanmay203/My_Portfolio',
     image: image22,
   },
